@@ -66,7 +66,7 @@ while True:
 	percentage = "{0:.2f}".format(finalWithFees / intial * 100)
 	print("Percentage: " + str(percentage) + "%")
 
-	f = open('ExchangeLogV2.txt', 'a')
+	f = open('ExchangeLogXRP-BTC.txt', 'a')
 	f.write(str(time.strftime("%c", time.localtime())) + " " + "{0:.2f}".format(finalWithFees) + " " + str(percentage) + "%  \n")
 	f.close()
 
