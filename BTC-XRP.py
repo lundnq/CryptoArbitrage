@@ -47,7 +47,7 @@ while True:
 	fixedXRPFee = (0.01 * btcmarketsAUD["XRP"])
 
 	feesBTCBuy = (intial * 0.0085)
-	feeBTCBFX = (intial - (feesBTCBuy + fixedBTCFee)) * 0.002
+	feeBTCBFX = (intial - (feesBTCBuy + fixedXRPFee)) * 0.002
 	feesBTCSell = (intial - (feesBTCBuy + feeBTCBFX + fixedXRPFee + fixedBTCFee)) * 0.0085
 
 	feesTotal = feesBTCBuy + feeBTCBFX + fixedXRPFee + fixedBTCFee + feesBTCSell
